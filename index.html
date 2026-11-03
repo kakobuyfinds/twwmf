@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#642738">
+<title>Wheebuy spreadsheet: Größen, Fotos &amp; Auswahlhilfe</title>
+<meta name="description" content="Wheebuy spreadsheet auf Deutsch: Produktlinks einordnen, Größen vergleichen, QC-Fotos verstehen und Gesamtkosten planen. Mit Kategorien und kompakten Ratgebern.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Wheebuy spreadsheet – eine Auswahl mit guten Gründen">
+<meta property="og:description" content="Ein deutscher Einkaufsleitfaden für Produktrecherche, passende Maße, aussagekräftige Fotos und eine vollständige Kostenübersicht.">
+<meta name="twitter:card" content="summary">
+<!-- index.html. Eine selbstreferenzielle Canonical-URL und og:url erst nach Festlegung der tatsächlichen Veröffentlichungsadresse ergänzen. -->
+<link rel="preconnect" href="https://static.nike.com" crossorigin>
+<style>
+:root{--paper:#f3f0ed;--white:#fff;--ink:#292426;--wine:#642738;--muted:#665e60;--line:#d9d0d1;--rose:#e9d7d9;--sand:#e6ded5}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-underline-offset:4px}a:focus-visible,summary:focus-visible{outline:3px solid var(--wine);outline-offset:5px}img{display:block;max-width:100%;height:auto}figure{margin:0}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.12}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:500}h1{font-size:clamp(2.5rem,5.3vw,4.6rem);letter-spacing:-.045em}h2{font-size:clamp(1.9rem,3.4vw,3rem);letter-spacing:-.035em}h3{font-size:1.12rem;line-height:1.4}p+p{margin-top:1rem}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}.masthead{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:-.04em;font-size:1.35rem;text-decoration:none}.edition,.eyebrow{font-size:.74rem;text-transform:uppercase;letter-spacing:.14em;font-weight:700}.edition{color:var(--muted)}.categories{padding:19px 0 22px}.categories h2{font:700 .78rem system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}.category-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.category-grid a{display:flex;align-items:center;justify-content:space-between;gap:5px;padding:10px 12px;border:1px solid var(--line);text-decoration:none;font-size:.8rem;background:var(--white)}.category-grid a:hover{border-color:var(--wine);color:var(--wine)}.category-grid span{font-size:1rem}.hero{display:grid;grid-template-columns:1.1fr 1fr;min-height:520px;background:var(--wine);color:var(--white)}.hero-copy{padding:45px clamp(24px,4vw,54px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.hero .eyebrow{color:#ecd7dc;margin-bottom:24px}.hero h1 span{display:block;margin-top:18px;font-size:.55em;letter-spacing:-.025em;font-style:italic}.hero-copy p{margin-top:26px;max-width:48ch;color:#f1e4e8}.button{display:inline-block;padding:12px 19px;border:1px solid currentColor;text-decoration:none;font-size:.9rem;font-weight:700}.hero .button{margin-top:28px;background:var(--white);color:var(--wine);border-color:var(--white)}.hero-photo{display:flex;flex-direction:column;background:#f7f7f7;color:var(--ink)}.hero-photo img{width:100%;height:440px;object-fit:contain}.hero-photo figcaption{padding:15px 20px;font-size:.78rem;color:var(--muted);border-top:1px solid var(--line)}.definition{display:grid;grid-template-columns:180px 1fr;gap:26px;padding:30px 0;border-bottom:1px solid var(--line)}.definition .eyebrow{color:var(--wine)}.definition h2{font-family:system-ui,sans-serif;font-size:1.12rem;letter-spacing:0;font-weight:700;margin-bottom:10px}.definition p{max-width:85ch}.section{padding:65px 0}.section-heading{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.section-heading p{max-width:45ch;color:var(--muted);font-size:.94rem}.eyebrow{display:block;color:var(--wine);margin-bottom:14px}.looks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.look{background:var(--white);border:1px solid var(--line)}.look img{width:100%;height:265px;object-fit:contain;background:#f8f7f5}.look .worn{object-fit:cover;object-position:center 40%}.look figcaption{padding:20px}.look h3{margin-bottom:10px}.look p{font-size:.88rem;color:var(--muted)}.note{font-size:.81rem;color:var(--muted);margin-top:18px;max-width:95ch}.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.checklist{padding:28px;background:var(--sand);align-self:start}.checklist h3{margin-bottom:16px}.checklist ol{padding-left:22px;margin:0}.checklist li+li{margin-top:14px}.checklist .button{margin-top:22px;color:var(--wine)}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;text-align:left;font-size:.89rem}caption{text-align:left;font-weight:700;margin-bottom:15px;color:var(--wine)}th,td{padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#e9e3e1}td:first-child{font-weight:650}thead th:first-child{width:28%}.journal{border-top:1px solid var(--line)}.article-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}.article{border-top:3px solid var(--wine);padding-top:20px}.article .number{display:block;color:var(--wine);font-family:Georgia,serif;font-size:2.2rem;line-height:1;margin-bottom:18px}.article h3{margin-bottom:16px}.article p{font-size:.92rem}.budget{background:var(--wine);color:var(--white);padding:35px;margin-top:38px;display:grid;grid-template-columns:1fr 1.3fr;gap:32px}.budget h3{font-size:1.4rem}.budget p{color:#f0dfe5}.formula{font-size:1.05rem;font-weight:650;line-height:1.85}.faq{border-top:1px solid var(--line)}.faq-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:65px}.faq-layout>div>p{margin-top:20px;color:var(--muted)}details{border-bottom:1px solid var(--line);padding:18px 0}details:first-child{padding-top:0}summary{font-weight:700;cursor:pointer;line-height:1.5}details p{margin-top:14px;color:var(--muted);font-size:.94rem}.closing{padding:38px;background:var(--rose);display:flex;align-items:center;justify-content:space-between;gap:25px}.closing h2{font-size:2rem}.closing p{margin-top:12px;max-width:65ch}.closing .button{color:var(--wine);white-space:nowrap}footer{padding:35px 0 26px;color:var(--muted);font-size:.8rem}footer p{max-width:105ch}.footer-row{display:flex;justify-content:space-between;gap:20px;margin-top:20px;border-top:1px solid var(--line);padding-top:20px}@media(min-width:900px){.journal,.faq{content-visibility:auto;contain-intrinsic-size:auto 700px}}@media(max-width:1000px){.hero-photo img{height:470px}.looks{grid-template-columns:repeat(2,minmax(0,1fr))}.split,.faq-layout{gap:30px}.article-grid{gap:20px}}@media(max-width:700px){.wrap{width:calc(100% - 28px)}.masthead{padding:18px 0;align-items:flex-start}.brand{font-size:1.15rem}.edition{font-size:.64rem;text-align:right;max-width:125px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.hero-copy{padding:34px 25px}.hero-photo img{height:320px}.definition{grid-template-columns:1fr;gap:0}.section{padding:42px 0}.section-heading{display:block}.section-heading p{margin-top:18px}.look img{height:200px}.look figcaption{padding:15px}.split,.faq-layout,.article-grid,.budget{grid-template-columns:1fr}.article-grid{gap:30px}.budget{padding:25px;gap:20px}.closing{display:block;padding:26px}.closing .button{margin-top:22px}.footer-row{flex-direction:column;gap:8px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "#seite",
+      "name": "Wheebuy spreadsheet: Größen, Fotos & Auswahlhilfe",
+      "description": "Ein deutscher Einkaufsleitfaden für Produktrecherche, passende Maße, aussagekräftige Fotos und eine vollständige Kostenübersicht.",
+      "inLanguage": "de",
+      "about": {
+        "@type": "Thing",
+        "name": "Wheebuy spreadsheet"
+      },
+      "hasPart": [
+        {"@id": "#ratgeber-groessen"},
+        {"@id": "#ratgeber-fotos"},
+        {"@id": "#ratgeber-versand"},
+        {"@id": "#faq"}
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "#ratgeber-groessen",
+      "headline": "Wheebuy Größenvergleich: Das Etikett ist erst der Anfang",
+      "inLanguage": "de",
+      "description": "Kleidungsstücke auf gleiche Weise messen und die konkrete Variante mit der Größentabelle abgleichen.",
+      "articleBody": "Lege ein gut sitzendes Kleidungsstück flach hin und miss es genauso, wie es die jeweilige Tabelle vorgibt. Notiere Brustweite, Länge und gegebenenfalls Schulterbreite. Eine flach gemessene Breite ist kein Körperumfang. Für Sneaker sind Fußlänge und die modellspezifische Größentabelle ein sinnvoller Ausgangspunkt. Bei Sets die Maße von Oberteil und Hose getrennt prüfen; bei Shorts auf Bundweite und Innenbeinlänge achten. Fehlt eine relevante Maßangabe, vor der Entscheidung nachfragen."
+    },
+    {
+      "@type": "Article",
+      "@id": "#ratgeber-fotos",
+      "headline": "Wheebuy QC-Fotos: Welche Frage beantwortet das Bild?",
+      "inLanguage": "de",
+      "description": "Übersicht, Details und Maßbilder nach ihrem tatsächlichen Aussagewert beurteilen.",
+      "articleBody": "Eine Übersicht zeigt die Form; Nahaufnahmen helfen bei Nähten, Verschlüssen und sichtbaren Beschädigungen. Prüfe zuerst, ob Bilder zur gewählten Variante und zum betreffenden Artikel gehören. Ältere Fotos anderer Bestellungen ersetzen keine Prüfung deines eigenen Artikels. Ein Maßband muss an den richtigen Punkten anliegen. Farbabweichungen können durch Beleuchtung und Bildschirm entstehen. Fotos allein bestätigen weder Materialzusammensetzung noch Echtheit."
+    },
+    {
+      "@type": "Article",
+      "@id": "#ratgeber-versand",
+      "headline": "Wheebuy Versandplanung: Vom Artikel zum Gesamtbetrag",
+      "inLanguage": "de",
+      "description": "Versandangebote anhand von Zielort, Paketmaßen und vollständigem Kostenumfang vergleichen.",
+      "articleBody": "Stelle den Warenwert neben alle weiteren Kosten: Lieferung innerhalb des Herkunftslands, Service- und Zahlungsgebühren, Währungsumrechnung, internationaler Versand und gegebenenfalls Abgaben. Vergleiche Versandangebote mit demselben Zielland und derselben Paketannahme. Neben dem Gewicht können die Paketmaße relevant sein. Prüfe außerdem Einschränkungen, Rückgabebedingungen und den Umfang einer möglichen Absicherung. Ein angezeigter Schätzwert ist kein verbindlicher Endpreis."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "#faq",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist ein Wheebuy spreadsheet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Der Suchbegriff bezeichnet Sammlungen von Produktverweisen zur Recherche im Umfeld von Wheebuy. Umfang, Betreiber und Aktualität unterscheiden sich. Ein Eintrag bestätigt keine Verfügbarkeit, Echtheit oder Annahme durch einen Einkaufsdienst."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Führen die Links hier direkt zu Wheebuy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Die zehn Kategorieverweise führen zu den jeweiligen Bereichen von hipobuyfind.com. Alle übrigen Navigationslinks öffnen https://www.hipobuyfind.com. Diese Seite enthält keinen Wheebuy-Checkout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie prüfe ich einen Produktlink vor dem Kauf?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vergleiche Quelle und Artikelkennung, öffne die aktuelle Angebotsseite und kontrolliere Farbe, Größe, Materialangaben, Verkäufer und Preis für genau diese Variante. Prüfe anschließend, ob dein gewählter Dienst den Artikel tatsächlich annimmt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Beweisen QC-Fotos die Echtheit eines Markenartikels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. QC-Fotos können sichtbare Eigenschaften und bestimmte Mängel zeigen. Sie ersetzen keinen belastbaren Herkunfts- oder Echtheitsnachweis und bestätigen keine unsichtbaren Materialeigenschaften."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet der Versand nach Deutschland?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Diese Seite nennt keinen Pauschalpreis. Für eine belastbare Schätzung brauchst du Zielort, Gewicht, Paketmaße und die aktuell angebotene Versandart. Prüfe zusätzlich Gebühren und gegebenenfalls Abgaben im konkreten Angebot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist diese Seite offiziell mit Wheebuy oder den Marken verbunden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Dies ist eine unabhängige Orientierungshilfe. Es besteht keine hier behauptete Partnerschaft oder offizielle Verbindung zu Wheebuy, Nike, Louis Vuitton, Gucci, Hermès oder Dior. Die Markenbilder sind visuelle Referenzen und keine Bestätigung von Katalogangeboten."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/twwmf/">
+</head>
+<body>
+<!--
+Recherche, 03.11.2026: Google-Ergebnisseite war technisch nicht abrufbar.
+Die folgenden zehn zugänglichen Websites wurden als Rechercheauswahl betrachtet;
+ihre Reihenfolge ist keine bestätigte Google-Top-10-Platzierung.
+
+1. https://www.sopel.fit/wheebuy-spreadsheet
+   Kategorien und Einstiegsablauf.
+2. https://whee-buy.net/
+   Produktrecherche und Abgrenzung zum Bestellprozess.
+3. https://qcradar.com/wheebuy-spreadsheet
+   Quellen, QC und Kostenkontext.
+4. https://one-to-oneyupoo.com/spreadsheets/wheebuy/
+   Produktverweise und unabhängige Rollen.
+5. https://grails.fit/wheebuy-spreadsheet
+   Markenfilter, Produktfotos und Fragen.
+6. https://wheespreadsheet.com/
+   Einsteigerablauf und Plattformunterschiede.
+7. https://mixfittio.com/en/spreadsheet/wheebuy
+   Gesamtkosten und Versandvergleich.
+8. https://wheebuyspreadsheet.com/
+   Größen, Fotoanalyse und Ratgeberstruktur.
+9. https://wheebuysheet.com/
+   Kategorieauswahl und Quellenlisten.
+10. https://wheebuys.org/
+    Auswahlgründe, Maße und Prüfchecklisten.
+
+Fremde Preise, Bestandszahlen, Rabatte, Bewertungen und
+Partnerschaftsbehauptungen wurden nicht übernommen.
+Redaktioneller Text wurde neu auf Deutsch verfasst.
+-->
+<div class="wrap">
+  <header class="masthead">
+    <a class="brand" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+    <p class="edition">Das Auswahljournal<br>Deutsch · Mode &amp; Recherche</p>
+  </header>
+
+  <nav class="categories" aria-label="Produktkategorien">
+    <h2>Zuerst die passende Kategorie</h2>
+    <div class="category-grid">
+      <a href="https://hipobuyfind.com/category-911-Shoes.html" lang="en">Shoes <span aria-hidden="true">↗</span></a>
+      <a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html" lang="en">Hoodies/Sweaters <span aria-hidden="true">↗</span></a>
+      <a href="https://hipobuyfind.com/category-913-T-Shirts.html" lang="en">T-Shirts <span aria-hidden="true">↗</span></a>
+      <a href="https://hipobuyfind.com/category-914-Jackets.html" lang="en">Jackets <span aria-hidden="true">↗</span></a>
+      <a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html" lang="en">Pants/Shorts <span aria-hidden="true">↗</span></a>
+      <a href="https://hipobuyfind.com/category-916-Headwear.html" lang="en">Headwear <span aria-hidden="true">↗</span></a>
+      <a href="https://hipobuyfind.com/category-917-Sets.html" lang="en">Sets <span aria-hidden="true">↗</span></a>
+      <a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html" lang="en">Underwear/underpants <span aria-hidden="true">↗</span></a>
+      <a href="https://hipobuyfind.com/category-919-Jersey.html" lang="en">Jersey <span aria-hidden="true">↗</span></a>
+      <a href="https://hipobuyfind.com/category-920-Accessories.html" lang="en">Accessories <span aria-hidden="true">↗</span></a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" aria-labelledby="haupttitel">
+      <div class="hero-copy">
+        <p class="eyebrow">Ein unabhängiger Einkaufsleitfaden</p>
+        <h1 id="haupttitel">Wheebuy spreadsheet<span>Ein Fund braucht<br>gute Gründe.</span></h1>
+        <p>Ein auffälliges Foto macht neugierig. Maße, eine nachvollziehbare Quelle und der vollständige Kostenrahmen machen daraus eine überlegte Auswahl. Hier beginnt deine Recherche.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Katalog bei HipobuyFind öffnen ↗</a>
+      </div>
+      <figure class="hero-photo">
+        <img
+          src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto%2Cq_auto%3Aeco%2Cu_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/fe9ddfb7-aa63-4821-85a2-1f792cf0e495/WMNS%2BNIKE%2BDUNK%2BLOW.png"
+          width="864"
+          height="1080"
+          alt="Nike Dunk Low in Schwarz und Creme mit goldfarbenem Swoosh"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async">
+        <figcaption>Nike Dunk Low · Visuelle Referenz für Silhouette, Farbflächen und Sohlenprofil.</figcaption>
+      </figure>
+    </section>
+
+    <section class="definition" aria-labelledby="kurzantwort">
+      <p class="eyebrow">Die kurze Antwort</p>
+      <div>
+        <h2 id="kurzantwort">Was bringt ein Spreadsheet bei der Produktauswahl?</h2>
+        <p>Es bündelt Produktverweise und Vergleichsmerkmale. Nutze ein Wheebuy spreadsheet auf Deutsch als Ausgangspunkt: Kategorie eingrenzen, konkrete Variante bestimmen und fehlende Informationen erkennen. Ein Verzeichnis ersetzt weder die aktuelle Angebotsseite noch eine Prüfung des Artikels.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="bildtitel">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Form erkennen · Details hinterfragen</span>
+          <h2 id="bildtitel">Bilder lesen, bevor<br>du dich festlegst.</h2>
+        </div>
+        <p>Die gleiche Frage passt selten zu jedem Artikel. Bei Kleidung zählt die Passform, bei Kopfbedeckungen der Umfang und bei Schmuck der Verschluss.</p>
+      </div>
+
+      <div class="looks">
+        <figure class="look">
+          <img
+            src="https://tw.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-double-face-monogram-jacket--FUJA10XKP140_PM2_Front%20view.png?hei=640&amp;wid=640"
+            width="640"
+            height="640"
+            alt="Beige Louis-Vuitton-Monogram-Jacke mit Stehkragen und Reißverschluss, Vorderansicht"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <h3>Louis Vuitton · Kleidung</h3>
+            <p>Eine Jacke nach Schulterbreite vergleichen und die Ärmellänge prüfen. Bei einem Hoodie zusätzlich die Brustweite messen; beim T-Shirt die Länge vergleichen.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="look">
+          <img
+            src="https://media.gucci.com/style/DarkGray_Center_0_0_490x245/1778234439/875740_4HBJS_1060_015_100_0000_Light-gg-cotton-canvas-bucket-hat.jpg"
+            width="490"
+            height="245"
+            alt="Schwarzer Gucci-Bucket-Hat mit GG-Muster und dunkler Einfassung"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <h3>Gucci · Kopfbedeckung</h3>
+            <p>Für einen Bucket-Hat den Kopfumfang messen. Hutweite und Krempenform getrennt betrachten: Ein Größenbuchstabe beschreibt die Form nicht vollständig.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="look">
+          <img
+            class="worn"
+            src="https://assets.hermes.com/is/image/hermesproduct/700001F%208X_worn_103?%24product_default_bg%24=&amp;wid=520"
+            width="520"
+            height="520"
+            alt="Hellblauer Hermès-Clic-H-Armreif mit goldfarbenem Verschluss, am Handgelenk getragen"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <h3>Hermès · Armreif</h3>
+            <p>Den Handgelenkumfang ermitteln und die angegebene Innenweite prüfen. Eine Aufnahme am Arm zeigt Proportionen, aber keine verlässliche Größe ohne Maßangabe.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="look">
+          <img
+            src="https://assets.christiandior.com/is/image/diorprod/N1713MTGMTD300_SBG_E01?%24r9x10_raw%24=&amp;bfc=on&amp;crop=0%2C0%2C4000%2C5000&amp;hei=650&amp;qlt=75&amp;scale=1&amp;wid=600"
+            width="600"
+            height="650"
+            alt="Goldfarbene Dior-30-Montaigne-Gliederkette mit CD-Signatur auf hellem Hintergrund"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <h3>Dior · Halskette</h3>
+            <p>Die Kettenlänge vergleichen und den Schmuckverschluss prüfen. Materialangaben nachlesen: Eine goldfarbene Oberfläche sagt allein nichts über den Metallgehalt aus.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="note">Die Abbildungen aus Markenquellen illustrieren Produktformen. Sie sind keine Fotos geprüfter Katalogangebote und kein Nachweis für Verfügbarkeit oder Echtheit. Markenbezeichnungen dienen der Einordnung.</p>
+    </section>
+
+    <section class="section split" aria-labelledby="anleitung">
+      <div class="checklist">
+        <span class="eyebrow">Wheebuy spreadsheet Anleitung</span>
+        <h2 id="anleitung">Eine kleine Auswahl.<br>Klare Kriterien.</h2>
+        <ol>
+          <li><strong>Bedarf festhalten.</strong> Lege Kategorie, Verwendungszweck und relevante Maße fest.</li>
+          <li><strong>Wheebuy Produktlinks vergleichen.</strong> Halte Quelle, Artikelkennung und gewählte Variante zusammen.</li>
+          <li><strong>Lücken klären.</strong> Fehlende Maße, unklare Materialien oder widersprüchliche Fotos vor einer Entscheidung nachfragen.</li>
+          <li><strong>Bedingungen lesen.</strong> Annahme des Artikels, Gebühren und Rückgabe beim jeweiligen Anbieter prüfen.</li>
+        </ol>
+        <a class="button" href="https://www.hipobuyfind.com">Produkte recherchieren ↗</a>
+      </div>
+
+      <div class="table-scroll">
+        <table>
+          <caption>Welche Angaben gehören in deinen Vergleich?</caption>
+          <thead>
+            <tr>
+              <th scope="col">Produktbereich</th>
+              <th scope="col">Sinnvolle Prüfung</th>
+              <th scope="col">Offene Frage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Sneaker</th>
+              <td>Schuhgröße in Zentimetern abgleichen, Modell und Sohlenform ansehen.</td>
+              <td>Passt die Tabelle zur konkreten Variante?</td>
+            </tr>
+            <tr>
+              <th scope="row">Hosen &amp; Shorts</th>
+              <td>Bundweite vergleichen und Innenbeinlänge prüfen.</td>
+              <td>Sind die Maße flach oder als Umfang angegeben?</td>
+            </tr>
+            <tr>
+              <th scope="row">Sets</th>
+              <td>Oberteil und Hose getrennt nachmessen.</td>
+              <td>Können beide Teile in passender Größe gewählt werden?</td>
+            </tr>
+            <tr>
+              <th scope="row">Unterwäsche</th>
+              <td>Materialangaben lesen und Maßtabelle beachten.</td>
+              <td>Welche Rückgabebedingungen gelten für den Artikel?</td>
+            </tr>
+            <tr>
+              <th scope="row">Trikots</th>
+              <td>Trikotmaße, Druckdetails und gewählte Ausführung prüfen.</td>
+              <td>Zeigen die Fotos genau die ausgewählte Version?</td>
+            </tr>
+            <tr>
+              <th scope="row">Accessoires</th>
+              <td>Abmessungen, Verschluss und angegebene Materialien prüfen.</td>
+              <td>Gibt es eine aussagekräftige Detailaufnahme?</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="note">Bei der Produktrecherche über Taobao, Weidian oder 1688 immer die aktuelle Quelle prüfen. Ein funktionierender Link ist noch keine Bestätigung von Bestand, Qualität oder Unterstützung durch einen Einkaufsdienst.</p>
+      </div>
+    </section>
+
+    <section class="section journal" aria-labelledby="ratgeber">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Drei kompakte Ratgeber</span>
+          <h2 id="ratgeber">Von der Auswahl<br>zur begründeten Entscheidung.</h2>
+        </div>
+        <p>Direkt auf dieser Seite lesen: Maße richtig einordnen, Fotos gezielt prüfen und einen vollständigen Kostenrahmen aufstellen.</p>
+      </div>
+
+      <div class="article-grid">
+        <article class="article" id="ratgeber-groessen">
+          <span class="number" aria-hidden="true">01</span>
+          <h3>Wheebuy Größenvergleich: Das Etikett ist erst der Anfang</h3>
+          <p>Lege ein gut sitzendes Kleidungsstück flach hin und miss es genauso, wie es die jeweilige Tabelle vorgibt. Notiere Brustweite, Länge und gegebenenfalls Schulterbreite. Eine flach gemessene Breite ist kein Körperumfang.</p>
+          <p>Für Sneaker sind Fußlänge und die modellspezifische Größentabelle ein sinnvoller Ausgangspunkt. Bei Sets die Maße von Oberteil und Hose getrennt prüfen; bei Shorts auf Bundweite und Innenbeinlänge achten. Fehlt eine relevante Maßangabe, vor der Entscheidung nachfragen.</p>
+        </article>
+
+        <article class="article" id="ratgeber-fotos">
+          <span class="number" aria-hidden="true">02</span>
+          <h3>Wheebuy QC-Fotos: Welche Frage beantwortet das Bild?</h3>
+          <p>Eine Übersicht zeigt die Form; Nahaufnahmen helfen bei Nähten, Verschlüssen und sichtbaren Beschädigungen. Prüfe zuerst, ob Bilder zur gewählten Variante und zum betreffenden Artikel gehören. Ältere Fotos anderer Bestellungen ersetzen keine Prüfung deines eigenen Artikels.</p>
+          <p>Ein Maßband muss an den richtigen Punkten anliegen. Farbabweichungen können durch Beleuchtung und Bildschirm entstehen. Fotos allein bestätigen weder Materialzusammensetzung noch Echtheit.</p>
+        </article>
+
+        <article class="article" id="ratgeber-versand">
+          <span class="number" aria-hidden="true">03</span>
+          <h3>Wheebuy Versandplanung: Vom Artikel zum Gesamtbetrag</h3>
+          <p>Stelle den Warenwert neben alle weiteren Kosten: Lieferung innerhalb des Herkunftslands, Service- und Zahlungsgebühren, Währungsumrechnung, internationaler Versand und gegebenenfalls Abgaben. Vergleiche Versandangebote mit demselben Zielland und derselben Paketannahme.</p>
+          <p>Neben dem Gewicht können die Paketmaße relevant sein. Prüfe außerdem Einschränkungen, Rückgabebedingungen und den Umfang einer möglichen Absicherung. Ein angezeigter Schätzwert ist kein verbindlicher Endpreis.</p>
+        </article>
+      </div>
+
+      <aside class="budget" aria-label="Kostenübersicht">
+        <div>
+          <h3>Der Artikelpreis<br>ist ein Teil des Budgets.</h3>
+          <p>Für eine Versandkostenschätzung nach Deutschland brauchst du konkrete Paketdaten. Notiere ungeklärte Kosten ausdrücklich als offen.</p>
+        </div>
+        <p class="formula">Warenwert + Lieferung im Herkunftsland + Service und Zahlung + Währungsumrechnung + internationaler Versand + gegebenenfalls Abgaben = dein zu prüfender Gesamtbetrag</p>
+      </aside>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-titel">
+      <div class="faq-layout">
+        <div>
+          <span class="eyebrow">Häufige Fragen · Direkte Antworten</span>
+          <h2 id="faq-titel">Was vor dem<br>nächsten Klick zählt.</h2>
+          <p>Eine praktische Orientierung für den Einstieg. Aktuelle Angebots- und Dienstbedingungen prüfst du beim jeweiligen Anbieter.</p>
+        </div>
+
+        <div>
+          <details open>
+            <summary>Was ist ein Wheebuy spreadsheet?</summary>
+            <p>Der Suchbegriff bezeichnet Sammlungen von Produktverweisen zur Recherche im Umfeld von Wheebuy. Umfang, Betreiber und Aktualität unterscheiden sich. Ein Eintrag bestätigt keine Verfügbarkeit, Echtheit oder Annahme durch einen Einkaufsdienst.</p>
+          </details>
+          <details>
+            <summary>Führen die Links hier direkt zu Wheebuy?</summary>
+            <p>Nein. Die zehn Kategorieverweise führen zu den jeweiligen Bereichen von hipobuyfind.com. Alle übrigen Navigationslinks öffnen https://www.hipobuyfind.com. Diese Seite enthält keinen Wheebuy-Checkout.</p>
+          </details>
+          <details>
+            <summary>Wie prüfe ich einen Produktlink vor dem Kauf?</summary>
+            <p>Vergleiche Quelle und Artikelkennung, öffne die aktuelle Angebotsseite und kontrolliere Farbe, Größe, Materialangaben, Verkäufer und Preis für genau diese Variante. Prüfe anschließend, ob dein gewählter Dienst den Artikel tatsächlich annimmt.</p>
+          </details>
+          <details>
+            <summary>Beweisen QC-Fotos die Echtheit eines Markenartikels?</summary>
+            <p>Nein. QC-Fotos können sichtbare Eigenschaften und bestimmte Mängel zeigen. Sie ersetzen keinen belastbaren Herkunfts- oder Echtheitsnachweis und bestätigen keine unsichtbaren Materialeigenschaften.</p>
+          </details>
+          <details>
+            <summary>Was kostet der Versand nach Deutschland?</summary>
+            <p>Diese Seite nennt keinen Pauschalpreis. Für eine belastbare Schätzung brauchst du Zielort, Gewicht, Paketmaße und die aktuell angebotene Versandart. Prüfe zusätzlich Gebühren und gegebenenfalls Abgaben im konkreten Angebot.</p>
+          </details>
+          <details>
+            <summary>Ist diese Seite offiziell mit Wheebuy oder den Marken verbunden?</summary>
+            <p>Nein. Dies ist eine unabhängige Orientierungshilfe. Es besteht keine hier behauptete Partnerschaft oder offizielle Verbindung zu Wheebuy, Nike, Louis Vuitton, Gucci, Hermès oder Dior. Die Markenbilder sind visuelle Referenzen und keine Bestätigung von Katalogangeboten.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="abschluss">
+      <div>
+        <h2 id="abschluss">Deine nächste Auswahl beginnt mit einer Frage.</h2>
+        <p>Welche Maße, Bilder und Angaben brauchst du, damit ein Produkt zu deinem Bedarf passt? Nimm diese Kriterien mit in den Katalog.</p>
+      </div>
+      <a class="button" href="https://www.hipobuyfind.com">HipobuyFind entdecken ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Unabhängige Orientierung zu Produktvergleichen. Hier werden keine Bestellungen oder Zahlungen abgewickelt. Produktfotos können vom konkreten Angebot abweichen; externe Bildquellen bestimmen ihre eigene Verfügbarkeit.</p>
+    <div class="footer-row">
+      <span>Auswahljournal · Deutsche Ausgabe</span>
+      <a href="https://www.hipobuyfind.com">www.hipobuyfind.com ↗</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
